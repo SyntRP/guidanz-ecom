@@ -1,0 +1,37 @@
+@import "./index.css";
+.primary_container {
+  padding: 0px 90px;
+}
+.secondary_container {
+  padding: 0px 190px;
+}
+.primary_bg_gradient {
+  background: transparent
+    linear-gradient(96deg, var(--primary-500) 0%, var(--secondary-500) 100%) 0%
+    0% no-repeat padding-box;
+}
+
+@media only screen and (max-width: 1280px) {
+  .primary_container {
+    padding: 0px 70px;
+  }
+  .secondary_container {
+    padding: 0px 150px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .primary_container {
+    padding: 0px 50px;
+  }
+  .secondary_container {
+    padding: 0px 80px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .primary_container {
+    padding: 0px 25px;
+  }
+  .secondary_container {
+    padding: 0px 40px;
+  }
+}
