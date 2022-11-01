@@ -21,6 +21,9 @@
   --secondary-700: #cb1051;
   --secondary-800: #b20e47;
   --secondary-900: #980c3d;
+
+  --aa-input-icon-size: 24px;
+  --aa-search-input-height: 38px;
 }
 @font-face {
   font-family: "gilroy-regular";
@@ -35,9 +38,7 @@ body {
   max-width: 1920px;
   min-height: 100vh;
   margin: 0 auto;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "gilroy-regular";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
