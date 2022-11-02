@@ -1,0 +1,26 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+import React from "react";
+
+const navbar = ({ children, ...props }) => {
+  console.log("hits", props);
+  return (
+    <div className="my-1 grid grid-cols-[auto_1fr_auto] items-center primary_container ">
+      <div className="grid grid-cols-2 pt-2">
+        <div className="grid grid-cols-10 gap-7  justify-items-center text-[14px]  ">
+          <div>Mens</div>
+          <div>Womens</div>
+          <div>kids</div>
+          <div>Bags</div>
+          <div>Shoes</div>
+        </div>
+
+        <div className="flex justify-end  text-[14px]">
+          {" "}
+          <div>Help?</div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default navbar;
