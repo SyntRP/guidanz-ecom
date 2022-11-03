@@ -28,9 +28,15 @@ module.exports = {
           800: "var(--secondary-800)",
           900: "var(--secondary-900)",
         },
+        primaryDark: {
+          500: "var(--primary-dark-500)",
+        },
       },
       fontFamily: {
-        gilroy: ["gilroy-regular"],
+        gilroy: ["gilroy-regular", "gilroy-bold"],
+      },
+      dropShadow: {
+        pdp: `0 0 2px #0000003A`,
       },
     },
     screens: {

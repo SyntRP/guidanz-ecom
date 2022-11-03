@@ -1,14 +1,18 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import Header from "./component/header";
+import LandingPage from "./page/LandingPage";
+import PDP from "./page/PDP";
 import "./App.css";
 
 const App = () => {
   return (
     <>
-      {/* <h1 className="text-3xl font-bold underline primary_container primary_bg_gradient font-[gilroy-regular]">
-        Guidanz
-      </h1> */}
       <Header />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/p/:sku" element={<PDP />} />
+      </Routes>
     </>
   );
 };

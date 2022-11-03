@@ -22,12 +22,18 @@
   --secondary-800: #b20e47;
   --secondary-900: #980c3d;
 
+  --primary-dark-500: #e6561c;
+
   --aa-input-icon-size: 24px;
   --aa-search-input-height: 38px;
 }
 @font-face {
   font-family: "gilroy-regular";
   src: url("./asset/font/Gilroy-Regular.ttf");
+}
+@font-face {
+  font-family: "gilroy-bold";
+  src: url("./asset/font/Gilroy-Bold.ttf");
 }
 * {
   margin: 0;
