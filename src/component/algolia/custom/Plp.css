@@ -4,12 +4,10 @@
   gap: 20px;
 }
 .full_app_container {
-  position: relative;
-  padding: 0px 80px;
 }
 .container_left {
   padding: 75px 0px 0px 0px;
-  border: #DDDDDD;
+  border: #dddddd;
 }
 .container_right {
   padding: 15px 0px 25px 10px;
@@ -27,41 +25,41 @@
   margin-bottom: 30px;
 }
 .ais-ToggleRefinement-labelText {
-  color: #0A1D48;
+  color: #0a1d48;
   font-weight: 600;
 }
 .ais-ToggleRefinement-checkbox {
   background: white;
 }
 .ais-ToggleRefinement-checkbox:checked {
-  background: #FF4742;
+  background: #ff4742;
 }
 .ais-Panel {
   margin-bottom: 16px;
 }
 .ais-Panel-header {
-  color: #0A1D48;
+  color: #0a1d48;
   position: relative;
   cursor: pointer;
   font-weight: bold;
   border: 1px;
   height: 46px;
   width: 226px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 15px;
   margin-bottom: 0rem;
 }
 .ais-RefinementList-labelText {
-  color: #0A1D48;
+  color: #0a1d48;
   font-weight: 400;
   font-size: 16px;
 }
-.ais-RefinementList-count{
-  color: #0A1D48;
+.ais-RefinementList-count {
+  color: #0a1d48;
   font-weight: 400;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   font-size: 14px;
-  padding: 2px 5px
+  padding: 2px 5px;
 }
 .ais-Panel-header::after {
   content: "+";
@@ -69,13 +67,12 @@
   position: absolute;
   top: -1%;
   right: 20px;
-  padding: 10px
+  padding: 10px;
 }
 .ais-Panel-header[data-expanded="true"]::after {
   content: "-";
   font-size: 1.25rem;
-  padding: 10px
-
+  padding: 10px;
 }
 
 .ais-Panel-body[data-expanded="false"] {
@@ -95,9 +92,9 @@
   padding: 0px;
   backdrop-filter: blur(22px) saturate(147%);
   -webkit-backdrop-filter: blur(22px) saturate(147%);
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 0px 0px 10px 10px;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
   position: relative;
   flex-direction: column;
   display: grid;
@@ -109,12 +106,11 @@
 .hits_price,
 .hits_name {
   margin: 10px 0px;
-  font-size: 16px
-  ;
+  font-size: 16px;
 }
 .hits_price {
   padding: 0px 15px;
-font-size: 18px;
+  font-size: 18px;
   font-weight: 800;
 }
 .hits_name {
@@ -205,7 +201,7 @@ algolia facet scrollbar - RefinementList
   grid-template-columns: auto 1fr auto;
 }
 .ais-RefinementList-checkbox:checked {
-  background-color:red;
+  background-color: red;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAoUlEQVRIie3Tqw0CQRQF0A0JBr8bEvrA0gECjcJBUFSAoAZaoAEqYQVNYDAYPgfBJIyDTWYQZK+/500m7xVFmzZNggrznHjtlUVqvMQh4Ef0/xTHoAEe/3mN6lNhiBPWyV8eSmNcQ2mVFI/KU9zxwCwpHiHLANwwSYpH2CZAF4yyrCK2ATwH9LttaTCgg5130h5RGNLFPgseDemhzIK3+UmeJtBAj7yn5iIAAAAASUVORK5CYII=);
 
   box-shadow: none;
