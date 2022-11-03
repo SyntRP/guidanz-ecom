@@ -4,6 +4,7 @@
   gap: 20px;
 }
 .full_app_container {
+  padding: 0px 80px;
 }
 .container_left {
   padding: 75px 0px 0px 0px;
@@ -45,21 +46,22 @@
   border: 1px;
   height: 46px;
   width: 226px;
-  background-color: #f2f2f2;
+  background-color: #fafafa;
   padding: 15px;
   margin-bottom: 0rem;
 }
 .ais-RefinementList-labelText {
   color: #0a1d48;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 11px;
 }
 .ais-RefinementList-count {
   color: #0a1d48;
   font-weight: 400;
-  background-color: #f2f2f2;
+  background-color: #fafafa;
   font-size: 14px;
   padding: 2px 5px;
+  border: 0px solid #b6b7d5;
 }
 .ais-Panel-header::after {
   content: "+";
@@ -69,6 +71,7 @@
   right: 20px;
   padding: 10px;
 }
+
 .ais-Panel-header[data-expanded="true"]::after {
   content: "-";
   font-size: 1.25rem;
@@ -93,24 +96,24 @@
   backdrop-filter: blur(22px) saturate(147%);
   -webkit-backdrop-filter: blur(22px) saturate(147%);
   background-color: #ffffff;
-  border-radius: 0px 0px 10px 10px;
-  border: 1px solid #dddddd;
+  /* border-radius: 0px 0px 10px 10px; */
+  border: 0px solid #dddddd;
   position: relative;
   flex-direction: column;
   display: grid;
 }
 .hit_image {
-  width: 314px;
-  height: 304px;
+  width: 200px;
+  height: 200px;
 }
 .hits_price,
 .hits_name {
-  margin: 10px 0px;
-  font-size: 16px;
+  margin: 2px 0px;
+  font-size: 12px;
 }
 .hits_price {
   padding: 0px 15px;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 800;
 }
 .hits_name {
@@ -122,11 +125,11 @@
 }
 .hit_color {
   position: absolute;
-  right: 10px;
-  bottom: 10px;
+  right: 17px;
+  bottom: 17px;
   border-radius: 50rem;
-  height: 24px;
-  width: 24px;
+  height: 18px;
+  width: 18px;
 }
 .pagination_wrapper {
   margin: 20px 10px;
@@ -139,15 +142,15 @@ Fliping Card
 */
 .flip-card {
   background-color: transparent;
-  width: 314px;
-  height: 400px;
+  width: 230px;
+  height: 230px;
   perspective: 1000px;
 }
 
 .flip-card-inner {
   position: relative;
-  width: 314px;
-  height: 400px;
+  width: 230px;
+  height: 230px;
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
@@ -200,12 +203,19 @@ algolia facet scrollbar - RefinementList
   display: grid;
   grid-template-columns: auto 1fr auto;
 }
+.ais-RefinementList-checkbox {
+  box-shadow: inset 0 1px 4px 0 rgb(119 122 175 / 0%);
+  border: 1px solid #212121;
+  border-radius: 0px;
+}
 .ais-RefinementList-checkbox:checked {
   background-color: red;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAoUlEQVRIie3Tqw0CQRQF0A0JBr8bEvrA0gECjcJBUFSAoAZaoAEqYQVNYDAYPgfBJIyDTWYQZK+/500m7xVFmzZNggrznHjtlUVqvMQh4Ef0/xTHoAEe/3mN6lNhiBPWyV8eSmNcQ2mVFI/KU9zxwCwpHiHLANwwSYpH2CZAF4yyrCK2ATwH9LttaTCgg5130h5RGNLFPgseDemhzIK3+UmeJtBAj7yn5iIAAAAASUVORK5CYII=);
 
-  box-shadow: none;
-  color: #ffffff28;
+  /* color: #ffffff28; */
+}
+.ais-RefinementList-item--selected .ais-RefinementList-checkbox {
+  color: red;
 }
 .ais-RefinementList::-webkit-scrollbar {
   width: 8px;
@@ -235,7 +245,7 @@ algolia facet scrollbar - RefinementList
 .ais-RatingMenu-count,
 .ais-RefinementList-count {
   padding: 2px 5px;
-  border-radius: 8px;
+  border-radius: 0px;
 }
 /*aa-custom-styles*/
 .aa-Item[aria-selected="true"] {
@@ -290,7 +300,9 @@ algolia facet scrollbar - RefinementList
 .aa-Item .hit_color {
   bottom: 20px;
 }
-
+.hitsperpage_wrapper {
+  gap: 76px;
+}
 /*
 No results
 */

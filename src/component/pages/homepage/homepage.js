@@ -50,9 +50,9 @@ const Homepage = () => {
     <div>
       {" "}
       <BuilderComponent model="page" content={content} />
-      {/* <div className="secondary_container  ">
+      <div className="secondary_container  ">
         <BuilderComponent model="banner-1" content={builderContentJson2} />
-      </div> */}
+      </div>
       <BuilderComponent model="banner-2" content={builderContentJson} />
       <div className="bg-[#0A1D48] h-80">
         {" "}
