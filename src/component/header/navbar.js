@@ -1,8 +1,6 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import React from "react";
 
-const navbar = ({ children, ...props }) => {
-  console.log("hits", props);
+const navbar = () => {
   return (
     <div className="my-1 grid grid-cols-[auto_1fr_auto] items-center primary_container ">
       <div className="grid grid-cols-2 pt-2">

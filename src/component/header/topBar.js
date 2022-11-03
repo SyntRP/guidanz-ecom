@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import useMediaQuery from "../../helper/hook/useMediaQuery";
 import { customTablet } from "../../helper/constant/screenSizes";
-import { ReactComponent as PrimaryLogo } from "../../asset/image/Header/primaryLogo.svg";
-import { ReactComponent as UserLogo } from "../../asset/image/Header/userLogo.svg";
-import { ReactComponent as CartLogo } from "../../asset/image/Header/cartLogo.svg";
+import { ReactComponent as PrimaryLogo } from "../../asset/image/header/primaryLogo.svg";
+import { ReactComponent as UserLogo } from "../../asset/image/header/userLogo.svg";
+import { ReactComponent as CartLogo } from "../../asset/image/header/cartLogo.svg";
 import Autocomplete from "../algolia/widget/AutoComplete";
 
 const TopBar = () => {

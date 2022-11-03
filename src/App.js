@@ -1,14 +1,15 @@
 import React from "react";
 import Header from "./component/header";
-import Footer from "./component/footer/Index.js";
+import Homepage from "./component/pages/homepage/homepage";
+import Footer from "./component/footer/Index";
 import "./App.css";
-import PlpList from "./component/algolia/custom/PlpList";
+import "@builder.io/widgets";
 
 const App = () => {
   return (
     <>
       <Header />
-      <PlpList />
+      <Homepage />
       <Footer />
     </>
   );
