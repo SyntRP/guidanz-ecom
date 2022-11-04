@@ -4,6 +4,7 @@ import Header from "./component/header";
 import Homepage from "./component/pages/homepage/homepage";
 import Footer from "./component/footer/Index";
 import PlpList from "./component/algolia/custom/PlpList";
+import PDP from "./page/PDP";
 import "./App.css";
 import "@builder.io/widgets";
 
@@ -14,8 +15,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/productlist" element={<PlpList />} />
-      </Routes>
+        <Route path="/p/:sku" element={<PDP />} />
+        </Routes>
       <Footer />
+      </Routes>
     </>
   );
 };
