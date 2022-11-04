@@ -51,7 +51,7 @@ export const productListPlugin = {
               state.context.nbProducts > 3 && (
                 <div style={{ textAlign: "center", margin: "20px" }}>
                   <a
-                    href="#"
+                    href="/#"
                     target="_blank"
                     rel="noreferrer noopener"
                     className="aa-SeeAllBtn"
