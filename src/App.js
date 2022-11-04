@@ -1,14 +1,24 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import Header from "./component/header";
+import Homepage from "./component/pages/homepage/homepage";
+import Footer from "./component/footer/Index";
+import PlpList from "./component/algolia/custom/PlpList";
+import PDP from "./page/PDP";
 import "./App.css";
+import "@builder.io/widgets";
 
 const App = () => {
   return (
     <>
-      {/* <h1 className="text-3xl font-bold underline primary_container primary_bg_gradient font-[gilroy-regular]">
-        Guidanz
-      </h1> */}
       <Header />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/productlist" element={<PlpList />} />
+        <Route path="/productlist/:cid" element={<PlpList />} />
+        <Route path="/p/:sku" element={<PDP />} />
+      </Routes>
+      <Footer />
     </>
   );
 };

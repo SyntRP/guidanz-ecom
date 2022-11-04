@@ -20,7 +20,6 @@ const Autocomplete = (props) => {
       container: containerRef.current,
       placeholder: "What are you looking for..",
       openOnFocus: true,
-      debug: true,
       plugins: [
         recentSearchesPlugin,
         querySuggestionsPlugin,

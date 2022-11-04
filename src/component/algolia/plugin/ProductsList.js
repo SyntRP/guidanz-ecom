@@ -51,7 +51,7 @@ export const productListPlugin = {
               state.context.nbProducts > 3 && (
                 <div style={{ textAlign: "center", margin: "20px" }}>
                   <a
-                    href="#"
+                    href="/#"
                     target="_blank"
                     rel="noreferrer noopener"
                     className="aa-SeeAllBtn"
@@ -71,11 +71,7 @@ export const productListPlugin = {
 const Hit = ({ hit }) => {
   return (
     <div className="aa_hit_wrapper">
-      {/* <img src={hit?.image_urls[0]} className="aa_hit_image" />
-      <p className="aa_hit_name">{hit?.name}</p>
-      <p className="aa_hit_price">
-        {hit?.price?.currency + " " + hit?.price?.value.toFixed(2)}
-      </p> */}
+      <a href={`/p/${hit?.objectID}`}>
       <div className="aa-ItemContent">
         <div className="aa-ItemPicture">
           <img src={hit?.image_urls[0]} alt={hit?.name} />
@@ -87,6 +83,7 @@ const Hit = ({ hit }) => {
           </div>
         </div>
       </div>
+      </a>
     </div>
   );
 };
