@@ -58,7 +58,7 @@ export const popularCategoriesPlugin = {
 
 function CategoryItem({ hit }) {
   return (
-    <div className="aa-ItemWrapper aa-PopularCategoryItem">
+    <a className="aa-ItemWrapper aa-PopularCategoryItem" href={`/productlist/${hit.label}`}>
       <div className="aa-ItemContent">
         <div className="aa-ItemPicture">
           <img src={images[hit.label]} alt={hit.label} />
@@ -69,6 +69,6 @@ function CategoryItem({ hit }) {
           </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 }
