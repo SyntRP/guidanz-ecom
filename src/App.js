@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Header from "./component/header";
 import Homepage from "./component/pages/homepage/homepage";
-import Footer from "./component/footer/Index";
+import Footer from "./component/footer";
 import PlpList from "./component/algolia/custom/PlpList";
 import PDP from "./page/PDP";
 import "./App.css";
