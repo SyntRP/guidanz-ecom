@@ -7,7 +7,7 @@ const PlpHit = ({ hit }) =>{
     const filteredColor = hit?.color?.filter_group?.slice(startIndexofColor);
 
     return (
-        <>
+        <a href={`/p/${hit?.objectID}`}>
           <div className="flip-card" tabIndex="0">
             <div className="flip-card-inner">
               <div className="flip-card-front">
@@ -26,7 +26,7 @@ const PlpHit = ({ hit }) =>{
           {filteredColor && (
             <div className="hit_color" style={{ backgroundColor: filteredColor }} />
           )}
-        </>
+        </a>
       );
 }
 

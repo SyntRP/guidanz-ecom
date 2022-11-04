@@ -15,6 +15,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/productlist" element={<PlpList />} />
+        <Route path="/productlist/:cid" element={<PlpList />} />
         <Route path="/p/:sku" element={<PDP />} />
       </Routes>
       <Footer />
