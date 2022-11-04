@@ -45,7 +45,7 @@
   font-weight: bold;
   border: 1px;
   height: 46px;
-  width: 226px;
+  width: 250px;
   background-color: #fafafa;
   padding: 15px;
   margin-bottom: 0rem;
@@ -67,8 +67,8 @@
   content: "+";
   font-size: 1.13rem;
   position: absolute;
-  top: -1%;
-  right: 20px;
+  top: 10%;
+  right: 0px;
   padding: 10px;
 }
 
@@ -143,14 +143,14 @@ Fliping Card
 .flip-card {
   background-color: transparent;
   width: 230px;
-  height: 230px;
+  height: 260px;
   perspective: 1000px;
 }
 
 .flip-card-inner {
   position: relative;
   width: 230px;
-  height: 230px;
+  height: 260px;
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
