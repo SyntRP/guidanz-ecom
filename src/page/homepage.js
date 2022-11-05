@@ -47,7 +47,7 @@ const Homepage = () => {
   }, []);
 
   return (
-    <div style={{marginTop:"-20px"}}>
+    <div>
       <BuilderComponent model="page" content={content} />
       <div className="secondary_container  ">
         <BuilderComponent model="banner-1" content={builderContentJson2} />
