@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Header from "./component/header";
-import Homepage from "./component/pages/homepage/homepage";
+import Homepage from "./page/homepage";
 import Footer from "./component/footer/Index";
-import PlpList from "./component/algolia/custom/PlpList";
+import PlpList from "./page/PlpList";
 import PDP from "./page/PDP";
 import "./App.css";
 import "@builder.io/widgets";
