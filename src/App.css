@@ -40,7 +40,7 @@
 ALGOLIA STYLES
 */
 
-.aa-Form {
+.aa-Form{
   display: grid;
   grid-auto-columns: 1fr auto auto;
   grid-auto-flow: column;
@@ -129,7 +129,9 @@ ALGOLIA STYLES
 }
 .aa-PanelSection--popularCategories .aa-List {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 16%);
+
+  grid-auto-flow: row;
   grid-gap: 10px;
 }
 
@@ -146,8 +148,8 @@ ALGOLIA STYLES
 
 @media only screen and (max-width: 1536px) {
   .aa-PanelSection--popularCategories .aa-List {
-    /* grid-auto-flow: column; */
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 33%);
+    grid-auto-flow: row;
   }
   .aa-PanelSection--products .aa-List {
     gap: 10px;

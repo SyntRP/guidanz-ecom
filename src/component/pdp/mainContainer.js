@@ -28,6 +28,7 @@ const MainContainer = ({
         <img
           src={selectedImage}
           className="rounded-md w-full mb:max-w-xs lg:max-w-sm xl:max-w-[400px] aspect-[6/7] 2xl:max-w-full"
+          alt=" "
         />
       </div>
       <div className="py-1 pr-4 mb:pr-6 order-last mb:order-2">
@@ -71,12 +72,22 @@ const MainContainer = ({
             ))}
           </div>
         </div>
+        <div className="my-6">
+          <button 
+          className="primary_bg_gradient h-[50px] w-[600px] text-white">
+            {`ADD TO CART - ${price?.currency + " " + price?.value.toFixed(2)}`}
+          </button> 
+          </div>
+          <div className ="my-6 text-[#0A1D48] font-bold">
+            <p>Free shipping on orders over $75. Free returns.</p>
+          </div>
       </div>
       <div className="order-2 mb:order-last">
         <div className="flex gap-2 mb:gap-3 flex-wrap">
           {images?.map((img, i) => (
             <img
               src={img}
+              alt=""
               className="w-[60px] mb:w-[70px] xl:w-[85px] 2xl:w-[100px] aspect-square cursor-pointer drop-shadow-pdp rounded-md"
               key={i}
               onClick={() => setSElectedImage(img)}
