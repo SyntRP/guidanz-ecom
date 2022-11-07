@@ -72,6 +72,15 @@ const MainContainer = ({
             ))}
           </div>
         </div>
+        <div className="my-6">
+          <button 
+          className="primary_bg_gradient h-[50px] w-[600px] text-white">
+            {`ADD TO CART - ${price?.currency + " " + price?.value.toFixed(2)}`}
+          </button> 
+          </div>
+          <div className ="my-6 text-[#0A1D48] font-bold">
+            <p>Free shipping on orders over $75. Free returns.</p>
+          </div>
       </div>
       <div className="order-2 mb:order-last">
         <div className="flex gap-2 mb:gap-3 flex-wrap">

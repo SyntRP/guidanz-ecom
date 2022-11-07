@@ -7,11 +7,11 @@
   padding: 0px 80px;
 }
 .container_left {
-  padding: 15px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   border: #dddddd;
 }
 .container_right {
-  padding: 15px 0px 25px 10px;
+  padding: 0px 0px 25px 10px;
 }
 /* .facet_container {
  
@@ -248,6 +248,12 @@ algolia facet scrollbar - RefinementList
 .ais-RefinementList-count {
   padding: 2px 5px;
   border-radius: 0px;
+}
+.pagination_wrapper {
+  margin: 20px 10px;
+  align-items: center;
+  justify-content: center;
+  display: grid;
 }
 /*aa-custom-styles*/
 .aa-Item[aria-selected="true"] {

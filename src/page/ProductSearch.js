@@ -2,11 +2,10 @@ import React from "react";
 import {
   Configure,
   Hits,
-  HitsPerPage,
   InstantSearch,
   Pagination,
+  SearchBox,
   SortBy,
-  CurrentRefinements,
 } from "react-instantsearch-hooks-web";
 import { useParams } from "react-router-dom";
 import { searchClient } from "../helper/service/searchClient";
@@ -14,27 +13,18 @@ import PlpHit from "../component/algolia/custom/PlpHit";
 import DynamicFacets from "../component/algolia/custom/DynamicFacets";
 import NoResultHandler from "../component/algolia/custom/NoResultHandler";
 import "../component/algolia/custom/Plp.css";
-import Breadcrumb from "../../src/component/common/Breadcrumb";
 
-const PlpList = (category) => {
+const ProductSearch = (category) => {
   const { cid } = useParams();
-  const categoryQuery = cid ? `list_categories:${cid}` : "";
-  const { list_categories: breadCrumbItems, name } = category;
-  
+  const categoryQuery = cid? `list_categories:${cid}` :""
+ 
   return (
     <>
       <InstantSearch searchClient={searchClient} indexName="e_com_demo">
-        <Configure ruleContexts={["base_facets"]} filters={categoryQuery} />
+        <Configure ruleContexts={["base_facets"]} filters={categoryQuery}/>
         <div className="primary_container">
-          <div className="grid grid-cols-[1fr_auto_auto] mt-4 gap-x-2">
-            <Breadcrumb items={breadCrumbItems} title={name} />
-            <HitsPerPage
-              items={[
-                { label: "20 hits per page", value: 20, default: true },
-                { label: "30 hits per page", value: 30 },
-                { label: "50 hits per page", value: 50 },
-              ]}
-            />
+          <div className="grid grid-cols-[3fr_auto] my-4 gap-x-2">
+            <SearchBox />
             <SortBy
               items={[
                 { label: "Sort by", value: "e_com_demo" },
@@ -48,9 +38,6 @@ const PlpList = (category) => {
                 },
               ]}
             />
-          </div>
-          <div className="mt-2">
-            <CurrentRefinements />
           </div>
           <div className="search_container">
             <div className="container_left">
@@ -69,4 +56,4 @@ const PlpList = (category) => {
   );
 };
 
-export default PlpList;
+export default ProductSearch;

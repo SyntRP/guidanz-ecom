@@ -40,7 +40,7 @@
 ALGOLIA STYLES
 */
 
-.aa-Form {
+.aa-Form{
   display: grid;
   grid-auto-columns: 1fr auto auto;
   grid-auto-flow: column;
