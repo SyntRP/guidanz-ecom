@@ -40,7 +40,7 @@
 ALGOLIA STYLES
 */
 
-.aa-Form{
+.aa-Form {
   display: grid;
   grid-auto-columns: 1fr auto auto;
   grid-auto-flow: column;
@@ -165,4 +165,40 @@ ALGOLIA STYLES
   .aa-PanelSection--products .aa-List {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/*
+Algolia instantsearch styles
+*/
+
+.ais-SearchBox-input,
+.ais-SearchBox-input:focus {
+  display: grid;
+  grid-auto-columns: 1fr auto auto;
+  grid-auto-flow: column;
+  gap: 5px;
+  border-color: var(--secondary-300);
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 4rem;
+}
+.ais-SearchBox-reset {
+  right: 2.5rem;
+}
+.ais-SearchBox-form::before {
+  display: none;
+}
+.ais-SearchBox-form::after {
+  background: transparent
+    linear-gradient(96deg, var(--primary-500) 0%, var(--secondary-500) 100%) 0%
+    0% no-repeat padding-box;
+  content: "\1F50D";
+  height: inherit;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 2rem;
+  border-radius: 0px 8px 8px 0px;
 }
