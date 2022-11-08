@@ -1,4 +1,5 @@
 import React from "react";
+import { Highlight } from "react-instantsearch-hooks-web";
 
 const PlpHit = ({ hit }) => {
   const frontImage = hit?.image_urls[0];
@@ -19,7 +20,7 @@ const PlpHit = ({ hit }) => {
         </div>
       </div>
 
-      <div className="hits_name">{hit?.name}</div>
+      <Highlight className="hits_name" attribute="name" hit={hit}>{hit?.name}</Highlight>
       <p className="hits_price">
         {hit?.price?.currency + " " + hit?.price?.value.toFixed(2)}
       </p>

@@ -26,7 +26,7 @@ const Breadcrumb = ({ items, title }) => {
           <li>
             <span className="text-gray-500 mx-2">/</span>
           </li>
-          <li className="text-black">{title}</li>
+          <li className="text-black capitalize">{title}</li>
         </ol>
       </nav>
     </div>

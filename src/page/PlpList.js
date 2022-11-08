@@ -19,7 +19,7 @@ import Breadcrumb from "../../src/component/common/Breadcrumb";
 const PlpList = (category) => {
   const { cid } = useParams();
   const categoryQuery = cid ? `list_categories:${cid}` : "";
-  const { list_categories: breadCrumbItems, name } = category;
+  const { list_categories: breadCrumbItems,  } = category;
   
   return (
     <>
@@ -27,7 +27,7 @@ const PlpList = (category) => {
         <Configure ruleContexts={["base_facets"]} filters={categoryQuery} />
         <div className="primary_container">
           <div className="grid grid-cols-[1fr_auto_auto] mt-4 gap-x-2">
-            <Breadcrumb items={breadCrumbItems} title={name} />
+            <Breadcrumb items={breadCrumbItems} title={cid} />
             <HitsPerPage
               items={[
                 { label: "20 hits per page", value: 20, default: true },

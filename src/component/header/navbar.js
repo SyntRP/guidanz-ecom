@@ -6,11 +6,11 @@ const navbar = () => {
     <div className="grid grid-cols-[auto_1fr_auto] items-center primary_container h-[50px] border-y-2">
       <div className="grid grid-cols-2 pt-2">
         <div className="grid grid-cols-10 gap-7  justify-items-center text-[12px] font-semibold  ">
-          <Link to = "/productlist/men"><div>Mens</div></Link>
-         <Link to = "/productlist/women"> <div>Womens</div></Link>
-         <Link to = "/productlist/Clothing"> <div>Clothings</div></Link>
-         <Link to = "/productlist/Bags"> <div>Bags</div></Link>
-         <Link to = "/productlist/Shoes"> <div>Shoes</div></Link>
+          <Link to = "/productlist/men"><div>Men</div></Link>
+         <Link to = "/productlist/women"> <div>Women</div></Link>
+         <Link to = "/productlist/Clothing"> <div>Clothing</div></Link>
+         <Link to = "/productlist/Bags"> <div>Bag</div></Link>
+         <Link to = "/productlist/Shoes"> <div>Shoe</div></Link>
         </div>
 
         <div className="flex justify-end  text-[12px] font-semibold">

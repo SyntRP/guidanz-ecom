@@ -24,7 +24,9 @@ const ProductSearch = (category) => {
         <Configure ruleContexts={["base_facets"]} filters={categoryQuery}/>
         <div className="primary_container">
           <div className="grid grid-cols-[3fr_auto] my-4 gap-x-2">
+            <div className="w-3/4 justify-self-end">
             <SearchBox />
+            </div>
             <SortBy
               items={[
                 { label: "Sort by", value: "e_com_demo" },

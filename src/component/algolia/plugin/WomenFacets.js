@@ -15,14 +15,16 @@ export const WomenFacets = () => {
         });
       setLoading(false);
     }
-  });
+  } ,[]);
   return (
     <div className="secondary_container">
       <p className="font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-orange-400 to-pink-900 h-[50px]">
         Shop The Collections
         {console.log(womensCollections, "womensCollections")}
       </p>
-      <div className="h-[400px]"></div>
+      <div className="h-[400px]">
+        
+      </div>
     </div>
   );
 };

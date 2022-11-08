@@ -202,3 +202,7 @@ Algolia instantsearch styles
   width: 2rem;
   border-radius: 0px 8px 8px 0px;
 }
+.ais-Highlight-highlighted{
+color: var(--secondary-500);
+background-color: rgba(var(--primary--rgb--key), 0.1);
+}
