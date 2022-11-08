@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { BuilderComponent, builder, useIsPreviewing } from "@builder.io/react";
+import { BuilderComponent, builder } from "@builder.io/react";
 import "@builder.io/widgets";
 import "./homepage.css";
+import { WomenFacets } from "../component/algolia/plugin/WomenFacets";
 
 builder.init("f8e38a6bf3f644369c3b57eb83a9764b");
 
@@ -48,17 +49,25 @@ const Homepage = () => {
 
   return (
     <div>
-      {" "}
       <BuilderComponent model="page" content={content} />
       <div className="secondary_container  ">
         <BuilderComponent model="banner-1" content={builderContentJson2} />
       </div>
       <BuilderComponent model="banner-2" content={builderContentJson} />
-      <div className="bg-[#0A1D48] h-80">
+      {/* <div>
+        <WomenFacets />
+      </div> */}
+      <div className="bg-[#0A1D48] ">
         {" "}
-        <div className="secondary_container  ">
+        <div className="secondary_container h-80 ">
           <BuilderComponent model="banner-3" content={builderContentJson1} />
+
         </div>
+      
+
+      </div>
+      <div  className="secondary_container  ">
+      <BuilderComponent model="banner-2" content={builderContentJson} />
       </div>
     </div>
   );

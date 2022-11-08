@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link ,useLocation } from "react-router-dom";
 import useMediaQuery from "../../helper/hook/useMediaQuery";
 import { customTablet } from "../../helper/constant/screenSizes";
 import { ReactComponent as PrimaryLogo } from "../../asset/image/header/primaryLogo.svg";
@@ -9,6 +9,7 @@ import Autocomplete from "../algolia/widget/AutoComplete";
 
 const TopBar = () => {
   const [largerThanTablet] = useMediaQuery(customTablet);
+  const location = useLocation();
   return (
     <div className="py-0.5 shadow">
       <div className="my-5 grid grid-cols-[auto_1fr_auto] items-center   primary_container">
@@ -17,7 +18,9 @@ const TopBar = () => {
         </Link>
         {largerThanTablet ? (
           <div className="justify-self-center mx-4 sm:mx-6 xl:mx-16  w-11/12 max-w-7xl min-w-[300px]">
+            {location.pathname === '/' ?(
             <Autocomplete />
+            ): <></>}
           </div>
         ) : (
           <div>I</div>

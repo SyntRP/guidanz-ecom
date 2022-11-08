@@ -3,26 +3,28 @@ import {
   Configure,
   Hits,
   InstantSearch,
-  SortBy,
+  Pagination,
   SearchBox,
+  SortBy,
 } from "react-instantsearch-hooks-web";
 import { useParams } from "react-router-dom";
-import { searchClient } from "../../../helper/service/searchClient";
-import PlpHit from "./PlpHit";
-import DynamicFacets from "./DynamicFacets";
-import NoResultHandler from "./NoResultHandler";
-import "./Plp.css";
+import { searchClient } from "../helper/service/searchClient";
+import PlpHit from "../component/algolia/custom/PlpHit";
+import DynamicFacets from "../component/algolia/custom/DynamicFacets";
+import NoResultHandler from "../component/algolia/custom/NoResultHandler";
+import "../component/algolia/custom/Plp.css";
 
-const PlpList = (ites) => {
+const ProductSearch = (category) => {
   const { cid } = useParams();
   const categoryQuery = cid? `list_categories:${cid}` :""
+ 
   return (
     <>
       <InstantSearch searchClient={searchClient} indexName="e_com_demo">
         <Configure ruleContexts={["base_facets"]} filters={categoryQuery}/>
         <div className="primary_container">
-          <div className="hitsperpage_wrapper items-end items-center">
-            {/* <SearchBox /> */}
+          <div className="grid grid-cols-[3fr_auto] my-4 gap-x-2">
+            <SearchBox />
             <SortBy
               items={[
                 { label: "Sort by", value: "e_com_demo" },
@@ -44,6 +46,7 @@ const PlpList = (ites) => {
             <NoResultHandler>
               <div className="container_right">
                 <Hits hitComponent={PlpHit} />
+                <Pagination className="pagination_wrapper" />
               </div>
             </NoResultHandler>
           </div>
@@ -53,4 +56,4 @@ const PlpList = (ites) => {
   );
 };
 
-export default PlpList;
+export default ProductSearch;
