@@ -45,7 +45,6 @@
   font-weight: bold;
   border-width: thin;
   height: 46px;
-  width: 250px;
   padding: 15px;
   margin-bottom: 0rem;
 }
@@ -62,8 +61,8 @@
   padding: 2px 5px;
   border: 0px solid #b6b7d5;
 }
-.ais-Panel-header[data-expanded="true"]{
-  background-color: #F2F2F2;
+.ais-Panel-header[data-expanded="true"] {
+  background-color: #f2f2f2;
 }
 .ais-Panel-header::after {
   content: "+";
@@ -121,7 +120,7 @@
 .hits_name {
   padding: 0px 15px;
   font-weight: 600;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -207,7 +206,7 @@ algolia facet scrollbar - RefinementList
 }
 .ais-RefinementList-checkbox {
   box-shadow: inset 0 1px 4px 0 rgb(119 122 175 / 0%);
-  border: 1px solid #0A1D48;
+  border: 1px solid #0a1d48;
   border-radius: 0px;
 }
 .ais-RefinementList-checkbox:checked {
