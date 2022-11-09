@@ -20,7 +20,7 @@ const App = () => {
         <Route path="/p/:sku" element={<PDP />} />
         <Route path="/pis" element={<ProductSearch />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
