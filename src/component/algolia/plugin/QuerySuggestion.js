@@ -30,11 +30,11 @@ export const querySuggestionsPlugin = createQuerySuggestionsPlugin({
               <div className="aa-ItemIcon aa-ItemIcon--noBorder">
                 <SearchIcon />
               </div>
-              <div className="aa-ItemContent">
+              <a className="aa-ItemContent" href={`/pis?query=${item?.query}`}>
                 <div className="aa-ItemContentBody">
                   <div className="aa-ItemContentTitle">{item?.query}</div>
                 </div>
-              </div>
+              </a>
             </div>
           );
         },
