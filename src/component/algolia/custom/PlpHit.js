@@ -9,18 +9,14 @@ const PlpHit = ({ hit }) => {
 
   return (
     <a href={`/p/${hit?.objectID}`}>
-      <div className="flip-card" tabIndex="0">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <img src={frontImage} className="hit_image" alt={hit?.name} />
-          </div>
-          <div className="flip-card-back">
-            <img src={backImage} className="hit_image" alt={hit?.name} />
-          </div>
-        </div>
+      <div className="md:aspect-[7/10]">
+        <img src={hit?.image_urls[0]} style={{ width: "100%" }} />
       </div>
-
-      <Highlight className="hits_name" attribute="name" hit={hit}>{hit?.name}</Highlight>
+      <div className="hits_name">
+        <Highlight attribute="name" hit={hit}>
+          {hit?.name}
+        </Highlight>
+      </div>
       <p className="hits_price">
         {hit?.price?.currency + " " + hit?.price?.value.toFixed(2)}
       </p>

@@ -43,7 +43,7 @@ export const brandsPlugin = {
 function BrandItem({ hit, components }) {
   return (
     <div className="aa-ItemWrapper">
-      <div className="aa-ItemContent">
+      <a className="aa-ItemContent" href={`/pis?brand=${hit?.label}`}>
         <div className="aa-ItemIcon aa-ItemIcon--noBorder">
           <TagIcon />
         </div>
@@ -52,7 +52,7 @@ function BrandItem({ hit, components }) {
             <components.ReverseHighlight hit={hit} attribute="label" />
           </div>
         </div>
-      </div>
+      </a>
     </div>
   );
 }

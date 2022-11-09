@@ -16,7 +16,7 @@ const Breadcrumb = ({ items, title }) => {
               <li key={i}>
                 <span className="text-gray-500 mx-2">/</span>
                 <Link
-                  to="#"
+                  to={`/productlist/${item}`}
                   className="text-primary-500 hover:text-primary-600"
                 >
                   {item}
