@@ -56,7 +56,7 @@ const ProductSearch = (category) => {
             <NoResultHandler>
               <div className="container_right">
                 <Hits hitComponent={PlpHit} />
-                <Pagination className="pagination_wrapper" />
+                <Pagination className="pagination_wrapper" padding={2} />
               </div>
             </NoResultHandler>
           </div>
