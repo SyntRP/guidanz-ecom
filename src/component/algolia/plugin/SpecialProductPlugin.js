@@ -44,7 +44,7 @@ export const specialProductPlugin = {
 function ProductItem({ hit, components }) {
   return (
     <div className="aa-ItemWrapper">
-      <div className="aa-ItemContent">
+      <a className="aa-ItemContent" href={`/p/${hit?.objectID}`}>
         <div className="aa-ItemIcon aa-ItemIcon--noBorder">
           <FavoriteIcon />
         </div>
@@ -53,7 +53,7 @@ function ProductItem({ hit, components }) {
             <components.ReverseHighlight hit={hit} attribute="name" />
           </div>
         </div>
-      </div>
+      </a>
     </div>
   );
 }

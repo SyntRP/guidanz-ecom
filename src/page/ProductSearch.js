@@ -7,7 +7,7 @@ import {
   SearchBox,
   SortBy,
 } from "react-instantsearch-hooks-web";
-import { useParams } from "react-router-dom";
+import usePageParam from "../helper/hook/usePageParam";
 import { searchClient } from "../helper/service/searchClient";
 import PlpHit from "../component/algolia/custom/PlpHit";
 import DynamicFacets from "../component/algolia/custom/DynamicFacets";
@@ -15,17 +15,25 @@ import NoResultHandler from "../component/algolia/custom/NoResultHandler";
 import "../component/algolia/custom/Plp.css";
 
 const ProductSearch = (category) => {
-  const { cid } = useParams();
-  const categoryQuery = cid? `list_categories:${cid}` :""
- 
+  const query = usePageParam("query");
+  const brand = usePageParam("brand");
+  const brandQuery = brand ? `brand:${brand}` : "";
   return (
     <>
-      <InstantSearch searchClient={searchClient} indexName="e_com_demo">
-        <Configure ruleContexts={["base_facets"]} filters={categoryQuery}/>
+      <InstantSearch
+        searchClient={searchClient}
+        indexName="e_com_demo"
+        initialUiState={{
+          e_com_demo: {
+            query: query,
+          },
+        }}
+      >
+        <Configure ruleContexts={["base_facets"]} filters={brandQuery} />
         <div className="primary_container">
           <div className="grid grid-cols-[3fr_auto] my-4 gap-x-2">
             <div className="w-3/4 justify-self-end">
-            <SearchBox />
+              <SearchBox />
             </div>
             <SortBy
               items={[

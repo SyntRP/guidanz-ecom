@@ -46,13 +46,11 @@ export const productListPlugin = {
             return <Hit hit={item} components={components} />;
           },
           footer({ state }) {
-            console.log(state);
             return (
               state.context.nbProducts > 3 && (
                 <div style={{ textAlign: "center", margin: "20px" }}>
                   <a
-                    href="/#"
-                    target="_blank"
+                    href={`/pis?query=${state?.query}`}
                     rel="noreferrer noopener"
                     className="aa-SeeAllBtn"
                   >
@@ -72,17 +70,17 @@ const Hit = ({ hit }) => {
   return (
     <div className="aa_hit_wrapper">
       <a href={`/p/${hit?.objectID}`}>
-      <div className="aa-ItemContent">
-        <div className="aa-ItemPicture">
-          <img src={hit?.image_urls[0]} alt={hit?.name} />
-        </div>
-        <div className="aa-ItemContentBody">
-          <div className="aa-ItemContentTitle">{hit?.name}</div>
-          <div className="aa-ItemContentTitle aa-ItemContentPrice">
-            {hit?.price?.currency + " " + hit?.price?.value.toFixed(2)}
+        <div className="aa-ItemContent">
+          <div className="aa-ItemPicture">
+            <img src={hit?.image_urls[0]} alt={hit?.name} />
+          </div>
+          <div className="aa-ItemContentBody">
+            <div className="aa-ItemContentTitle">{hit?.name}</div>
+            <div className="aa-ItemContentTitle aa-ItemContentPrice">
+              {hit?.price?.currency + " " + hit?.price?.value.toFixed(2)}
+            </div>
           </div>
         </div>
-      </div>
       </a>
     </div>
   );

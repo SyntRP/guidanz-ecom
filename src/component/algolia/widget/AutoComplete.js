@@ -1,6 +1,7 @@
 import { autocomplete } from "@algolia/autocomplete-js";
 import React, { createElement, Fragment, useEffect, useRef } from "react";
 import { render } from "react-dom";
+import { useNavigate } from "react-router-dom";
 import { brandsPlugin } from "../plugin/BrandPlugin";
 import { popularCategoriesPlugin } from "../plugin/PopularCategories";
 import { productListPlugin } from "../plugin/ProductsList";
@@ -9,6 +10,7 @@ import { recentSearchesPlugin } from "../plugin/RecentSearch";
 import { specialProductPlugin } from "../plugin/SpecialProductPlugin";
 
 const Autocomplete = (props) => {
+  const navigate = useNavigate();
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -29,7 +31,7 @@ const Autocomplete = (props) => {
         specialProductPlugin,
       ],
       onSubmit({ state }) {
-        console.log("Submitted : ", state);
+        if (state.query) navigate(`/pis?query=${state.query}`);
       },
       render({ elements, render, html, state, Fragment }, root) {
         const {
