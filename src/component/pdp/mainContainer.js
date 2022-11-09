@@ -74,7 +74,7 @@ const MainContainer = ({
         </div>
         <div className="my-6">
           <button 
-          className="primary_bg_gradient h-[50px] w-[600px] text-white">
+          className="primary_bg_gradient p-4 w-[370px] text-white">
             {`ADD TO CART - ${price?.currency + " " + price?.value.toFixed(2)}`}
           </button> 
           </div>
