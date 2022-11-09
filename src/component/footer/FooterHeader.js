@@ -8,8 +8,8 @@ import youtube from "../../asset/image/HomePage/Path 256.svg";
 
 const FooterHeader = () => {
   return (
-    <div className="grid grid-cols-1 mb:grid-cols-[auto_auto_auto] primary_bg_gradient secondary_container content-center">
-      <div className="place-items-center p-[2rem]">
+    <div className="grid grid-cols-1 mb:grid-cols-[auto_auto_auto]  primary_bg_gradient secondary_container items-center">
+      <div className="place-items-center p-[30px]">
         <img src={logo} alt=" " />
       </div>
       <div>
@@ -21,12 +21,12 @@ const FooterHeader = () => {
         <div>
           <form>
             <Input
-              className=" bg-transparent p-3 border border-white-500 w-[380px] text-white mt-2 placeholder-white "
+              className=" bg-transparent p-3 border border-white-500 w-[330px] text-white mt-2 placeholder-white "
               type="text"
               required
               placeholder="Enter your email id"
             />
-            <Button className="bg-white p-[13px] w-[140px] font-bold">
+            <Button className="bg-white p-[13px] w-[120px] font-bold">
               Submit
             </Button>
           </form>
