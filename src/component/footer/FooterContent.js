@@ -2,9 +2,9 @@ import React from "react";
 
 const FooterContent = () => {
   return (
-    <div className="grid grid-cols-4 md:cols-2 gap-x-12 h-[380px] w[1920px]  secondary_container content-center">
+    <div className="grid sm:grid-cols-4 grid-cols-2 md:gap-x-8 p-[5rem] secondary_container content-center mt-[20px] ">
       <div>
-        <h4 className="font-black text-[#0A1D48] text-[16px] font-bold">
+        <h4 className="text-[#0A1D48] text-[16px] font-bold">
           HELP
         </h4>
         <ul className="mt-4 flex flex-col space-y-2">
@@ -51,7 +51,7 @@ const FooterContent = () => {
         </ul>
       </div>
       <div>
-        <h4 className="font-black text-[#0A1D48] text-[16px] font-bold">
+        <h4 className="text-[#0A1D48] text-[16px] font-bold">
           SHOP
         </h4>
         <ul className="mt-4 flex flex-col space-y-2">
@@ -114,7 +114,7 @@ const FooterContent = () => {
         </ul>
       </div>
       <div>
-        <h4 className="font-black text-[#0A1D48] text-[16px] font-bold ">
+        <h4 className="text-[#0A1D48] text-[16px] font-bold ">
           ABOUT
         </h4>
         <ul className="mt-4 flex flex-col space-y-2">
@@ -185,7 +185,7 @@ const FooterContent = () => {
         </ul>
       </div>
       <div>
-        <h4 className="font-black text-[#0A1D48] text-[16px] font-bold">
+        <h4 className="text-[#0A1D48] text-[16px] font-bold">
           GLOBAL BRANDs
         </h4>
         <ul className="mt-4 flex flex-col space-y-2">

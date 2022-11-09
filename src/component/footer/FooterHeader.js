@@ -8,13 +8,13 @@ import youtube from "../../asset/image/HomePage/Path 256.svg";
 
 const FooterHeader = () => {
   return (
-    <div className="grid grid-cols-[auto_auto_auto] h-[208px] w[1920px]  primary_bg_gradient secondary_container content-center">
-      <div className="place-items-center">
-        <img src={logo} alt=" " className="w-56" />
+    <div className="grid grid-cols-1 mb:grid-cols-[auto_auto_auto] primary_bg_gradient secondary_container content-center">
+      <div className="place-items-center p-[2rem]">
+        <img src={logo} alt=" " />
       </div>
       <div>
         <div>
-          <p className="text-white font-bold text-[23px]">
+          <p className="text-white font-bold md:text-[23px] text-[14px]">
             SIGN UP FOR EXCLUSIVE NEWS & OFFERS
           </p>
         </div>
@@ -26,13 +26,13 @@ const FooterHeader = () => {
               required
               placeholder="Enter your email id"
             />
-            <Button className="bg-white h-[50px] w-[144px] font-bold">
+            <Button className="bg-white p-[13px] w-[140px] font-bold">
               Submit
             </Button>
           </form>
         </div>
       </div>
-      <div className=" flex flex-row gap-4 pt-12">
+      <div className="flex gap-4 place-item-center p-[2rem]">
         <div className="rounded-full bg-black h-[48px] w-[48px]  ">
           <img src={facebook} alt=" " className="h-[26px] w-[26px] m-2.5" />
         </div>
