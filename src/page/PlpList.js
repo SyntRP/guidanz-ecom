@@ -36,9 +36,9 @@ const PlpList = (category) => {
 
             <HitsPerPage
               items={[
-                { label: "12 Hits", value: 12, default: true },
-                { label: "24 Hits", value: 24 },
-                { label: "36 Hits", value: 36 },
+                { label: "12 Items", value: 12, default: true },
+                { label: "24 Items", value: 24 },
+                { label: "36 Items", value: 36 },
               ]}
             />
             {!isLargerThanTablet && (
@@ -51,7 +51,7 @@ const PlpList = (category) => {
             )}
             <SortBy
               items={[
-                { label: "Relaveance", value: "e_com_demo" },
+                { label: "Relevance", value: "e_com_demo" },
                 {
                   label: "Price - Low to High",
                   value: "e_com_demo_price_low_to_high",
