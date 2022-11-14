@@ -61,13 +61,10 @@ const Homepage = () => {
         {" "}
         <div className="secondary_container h-80 ">
           <BuilderComponent model="banner-3" content={builderContentJson1} />
-
         </div>
-      
-
       </div>
-      <div  className="secondary_container  ">
-      <BuilderComponent model="banner-2" content={builderContentJson} />
+      <div className="secondary_container  ">
+        {/* <BuilderComponent model="banner-2" content={builderContentJson} /> */}
       </div>
     </div>
   );

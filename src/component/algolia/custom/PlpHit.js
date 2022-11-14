@@ -8,21 +8,34 @@ const PlpHit = ({ hit }) => {
   const filteredColor = hit?.color?.filter_group?.slice(startIndexofColor);
 
   return (
-    <a href={`/p/${hit?.objectID}`}>
-      <div className="md:aspect-[7/10]">
-        <img src={hit?.image_urls[0]} style={{ width: "100%" }} />
+    <a
+      className="hover:transition-shadow  hover:shadow-2xl shadow-[#FE692A]"
+      href={`/p/${hit?.objectID}`}
+    >
+      <div>
+        <div>
+          <img
+            src={hit?.image_urls[0]}
+            style={{ width: "100%" }}
+            className="md:aspect-[10/11]"
+            alt="plp"
+          />
+        </div>
+        <div className="hits_name">
+          <Highlight attribute="name" hit={hit}>
+            {hit?.name}
+          </Highlight>
+        </div>
+        <p className="hits_price">
+          {hit?.price?.currency + " " + hit?.price?.value.toFixed(2)}
+        </p>
+        {filteredColor && (
+          <div
+            className="hit_color"
+            style={{ backgroundColor: filteredColor }}
+          />
+        )}
       </div>
-      <div className="hits_name">
-        <Highlight attribute="name" hit={hit}>
-          {hit?.name}
-        </Highlight>
-      </div>
-      <p className="hits_price">
-        {hit?.price?.currency + " " + hit?.price?.value.toFixed(2)}
-      </p>
-      {filteredColor && (
-        <div className="hit_color" style={{ backgroundColor: filteredColor }} />
-      )}
     </a>
   );
 };

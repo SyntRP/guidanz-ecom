@@ -57,7 +57,7 @@
 .ais-RefinementList-count {
   color: #0a1d48;
   font-weight: 400;
-  background-color: #fafafa;
+  background-color: #f2f2f2;
   font-size: 14px;
   padding: 2px 5px;
   border: 0px solid #b6b7d5;
@@ -219,6 +219,7 @@ algolia facet scrollbar - RefinementList
   overflow-x: auto;
 }
 .ais-RefinementList-list {
+  margin-top: 10px;
   padding-right: 10px;
 }
 .ais-RefinementList-label {
@@ -331,6 +332,7 @@ algolia facet scrollbar - RefinementList
 .hitsperpage_wrapper {
   gap: 76px;
 }
+height
 /*
 No results
 */
@@ -356,6 +358,7 @@ price SLider css
   cursor: pointer;
   height: 3px;
   position: absolute;
+  margin-top: 30px;
 }
 
 .ais-RangeSlider .slider-tick {
@@ -369,6 +372,7 @@ price SLider css
   transform: translateX(-50%);
   user-select: none;
   color: black;
+  margin-top: 30px;
 }
 
 .ais-RangeSlider .slider-handle {
@@ -384,11 +388,26 @@ price SLider css
   width: 16px;
   z-index: 1;
   color: #f5f5fa;
+  margin-top: 30px;
+}
+
+.ais-SearchBox-form {
+  margin-top: 15px;
 }
 
 @media (max-width: 899px) {
   .ais-RangeSlider .slider-handle {
     height: 1.5rem;
     width: 1.5rem;
+    margin-top: -5px;
+  }
+  .ais-RangeSlider .slider-tick {
+    margin-top: -5px;
+  }
+  .ais-RangeSlider .slider-rail {
+    margin-top: -5px;
+  }
+  .ais-RangeSlider .slider-track {
+    margin-top: -5px;
   }
 }

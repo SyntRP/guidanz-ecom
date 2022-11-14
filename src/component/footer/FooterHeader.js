@@ -8,7 +8,7 @@ import youtube from "../../asset/image/HomePage/Path 256.svg";
 
 const FooterHeader = () => {
   return (
-    <div className="grid grid-cols-1 mb:grid-cols-[auto_auto_auto]  primary_bg_gradient secondary_container items-center">
+    <div className="grid grid-cols-1 mb:grid-cols-[auto_auto_auto]  primary_bg_gradient secondary_container items-center mt-5">
       <div className="place-items-center p-[30px]">
         <img src={logo} alt=" " />
       </div>
