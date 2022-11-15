@@ -230,6 +230,6 @@ Algolia instantsearch styles
 		transition: transform .25s;
 }
 
-.css-12153wi{
-z-index: 999;
+.g-swiper{
+  z-index: -1;
 }
