@@ -211,3 +211,25 @@ Algolia instantsearch styles
   color: var(--secondary-500);
   background-color: rgba(var(--primary--rgb--key), 0.1);
 }
+.builder-tabs-wrap{
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: auto;
+    border-bottom: inset;
+}
+.builder-tab-wrap .builder-tab-active{
+  transform: translateX(0) scaleX(0.333);
+  position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background-color: blue;
+		transform-origin: 0 0;
+		transition: transform .25s;
+}
+
+.css-12153wi{
+z-index: 999;
+}
