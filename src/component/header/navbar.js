@@ -48,12 +48,18 @@ const navbar = () => {
       <div className="flex my-1  justify-between">
         <div className="flex justify-start gap-4 ">
           {NAVITEMS.map((item, i) => (
-            <Link key={i} className="py-2" to={`/productlist/${item?.slug}`}>
+            <Link
+              key={i}
+              className="py-2 px-2 hover:text-[#FE692A]   "
+              to={`/productlist/${item?.slug}`}
+            >
               {item.name}
             </Link>
           ))}
         </div>
-        <div className="hidden sm:inline py-2">Help?</div>
+        <div className="hidden sm:inline py-2 px-2 hover:text-[#FE692A]">
+          Help?
+        </div>
       </div>
     </div>
   );

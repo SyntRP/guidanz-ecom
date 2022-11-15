@@ -64,8 +64,10 @@ const Homepage = () => {
           <BuilderComponent model="banner-3" content={builderContentJson1} />
         </div>
       </div>
+
       <div className="secondary_container mb-5  ">
         <ShoeFacets/>
+
       </div>
     </div>
   );

@@ -4,10 +4,8 @@ const FooterContent = () => {
   return (
     <div className="grid sm:grid-cols-4 grid-cols-2 md:gap-x-8 p-[5rem] secondary_container content-center mt-[20px] ">
       <div>
-        <h4 className="text-[#0A1D48] text-[16px] font-bold">
-          HELP
-        </h4>
-        <ul className="mt-4 flex flex-col space-y-2">
+        <h4 className="text-[#0A1D48] text-[16px] font-bold">HELP</h4>
+        <ul className="mt-4 flex flex-col space-y-1">
           <li>
             <a
               className="hover:opacity-75 text-[#0A1D48] text-[14px]"
@@ -51,10 +49,8 @@ const FooterContent = () => {
         </ul>
       </div>
       <div>
-        <h4 className="text-[#0A1D48] text-[16px] font-bold">
-          SHOP
-        </h4>
-        <ul className="mt-4 flex flex-col space-y-2">
+        <h4 className="text-[#0A1D48] text-[16px] font-bold">SHOP</h4>
+        <ul className="mt-4 flex flex-col space-y-1">
           <li>
             <a
               className="hover:opacity-75 text-[#0A1D48] text-[14px]"
@@ -114,10 +110,8 @@ const FooterContent = () => {
         </ul>
       </div>
       <div>
-        <h4 className="text-[#0A1D48] text-[16px] font-bold ">
-          ABOUT
-        </h4>
-        <ul className="mt-4 flex flex-col space-y-2">
+        <h4 className="text-[#0A1D48] text-[16px] font-bold ">ABOUT</h4>
+        <ul className="mt-4 flex flex-col space-y-1">
           <li>
             <a
               className="hover:opacity-75 text-[#0A1D48] text-[14px] "
@@ -185,10 +179,8 @@ const FooterContent = () => {
         </ul>
       </div>
       <div>
-        <h4 className="text-[#0A1D48] text-[16px] font-bold">
-          GLOBAL BRANDs
-        </h4>
-        <ul className="mt-4 flex flex-col space-y-2">
+        <h4 className="text-[#0A1D48] text-[16px] font-bold">GLOBAL BRANDs</h4>
+        <ul className="mt-4 flex flex-col space-y-1">
           <li>
             <a
               className="hover:opacity-75 text-[#0A1D48] text-[14px]"

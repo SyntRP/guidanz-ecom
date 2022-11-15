@@ -7,7 +7,7 @@ const Breadcrumb = ({ items, title }) => {
       <nav className="rounded-md w-full">
         <ol className="list-reset flex flex-wrap">
           <li>
-            <Link to="/" className="text-primary-500 hover:text-primary-600">
+            <Link to="/" className="text-[#FE692A] hover:text-primary-900">
               Home
             </Link>
           </li>
@@ -17,7 +17,7 @@ const Breadcrumb = ({ items, title }) => {
                 <span className="text-gray-500 mx-2">/</span>
                 <Link
                   to={`/productlist/${item}`}
-                  className="text-primary-500 hover:text-primary-600"
+                  className="text-[#FE692A] hover:text-primary-900"
                 >
                   {item}
                 </Link>
