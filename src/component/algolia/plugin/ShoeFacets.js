@@ -31,7 +31,7 @@ export const ShoeFacets = () => {
           spaceBetween={1}
           // navigation={true}
           modules={[Navigation]}
-          className="mySwiper"
+          className="mySwiper g-swiper"
         >
           {shoeCollections?.map((sc, i) => (
             <SwiperSlide key={i}>
