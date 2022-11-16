@@ -35,6 +35,7 @@ const ProductSearch = (category) => {
             <div className="w-3/4 justify-self-end">
               <SearchBox />
             </div>
+            <div className="mt-3.5">
             <SortBy
               items={[
                 { label: "Sort by", value: "e_com_demo" },
@@ -48,6 +49,7 @@ const ProductSearch = (category) => {
                 },
               ]}
             />
+            </div>
           </div>
           <div className="search_container">
             <div className="container_left">

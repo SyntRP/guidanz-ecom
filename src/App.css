@@ -230,6 +230,6 @@ Algolia instantsearch styles
 		transition: transform .25s;
 }
 
-.g-swiper{
-  z-index: -1;
-}
+/* .g-swiper{
+ max-height: 460px;
+} */
