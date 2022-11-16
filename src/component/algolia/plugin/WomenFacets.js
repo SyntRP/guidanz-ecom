@@ -10,11 +10,6 @@ export const WomenFacets = () => {
   const [womensCollections, setWomenCollections] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  const startIndexofColor = womensCollections?.color?.filter_group?.indexOf("#");
-  const filteredColor = womensCollections?.color?.filter_group?.slice(startIndexofColor);
-  // console.log("filteredColor:",filteredColor);
-  // console.log("startIndexofColor:",startIndexofColor);
-
   useEffect(() => {
     if (loading) {
       index
@@ -32,7 +27,7 @@ export const WomenFacets = () => {
     <div className="secondary_container">
       <p className="collection-wrapper">
         Shop The Collections
-        {/* {console.log(womensCollections, "womensCollections")} */}
+        {console.log(womensCollections, "womensCollections")}
       </p>
       <div className="mt-5">
       <Swiper
@@ -62,9 +57,7 @@ export const WomenFacets = () => {
       <p className="hits_price">
         {wm?.price?.currency + " " + wm?.price?.value.toFixed(2)}
       </p>
-      {filteredColor && (
-        <div className="hit_color" style={{ backgroundColor: filteredColor }} />
-      )}
+        <div className="hit_color" style={{ backgroundColor: wm?.color?.original_name}} />
       </div>  
     </a>
         </SwiperSlide>

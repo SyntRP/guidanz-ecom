@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Input } from "reactstrap";
-import logo from "../../asset/image/HomePage/Group 2843.png";
+import logo from "../../asset/image/HomePage/Group 2843.svg";
 import facebook from "../../asset/image/HomePage/facebook-fill.svg";
 import linkedin from "../../asset/image/HomePage/Path 252.svg";
 import twitter from "../../asset/image/HomePage/Path 254.svg";
@@ -33,16 +33,16 @@ const FooterHeader = () => {
         </div>
       </div>
       <div className="flex gap-4 place-item-center p-[2rem]">
-        <div className="rounded-full bg-black h-[48px] w-[48px]  ">
+        <div className="rounded-full bg-black h-[48px] w-[48px]  hover:opacity-50 ">
           <img src={facebook} alt=" " className="h-[26px] w-[26px] m-2.5" />
         </div>
-        <div className="rounded-full bg-black h-[48px] w-[48px]">
+        <div className="rounded-full bg-black h-[48px] w-[48px] hover:opacity-50">
           <img src={linkedin} alt=" " className="w-[20px] h-[19px] m-3.5" />
         </div>
-        <div className="rounded-full bg-black h-[48px] w-[48px]">
+        <div className="rounded-full bg-black h-[48px] w-[48px] hover:opacity-50">
           <img src={twitter} alt=" " className="w-[21px] h-[17px] m-3.5" />
         </div>
-        <div className="rounded-full bg-black h-[48px] w-[48px]">
+        <div className="rounded-full bg-black h-[48px] w-[48px] hover:opacity-50">
           <img src={youtube} alt=" " className="w-[20px] h-[15px] m-3.5" />
         </div>
       </div>
