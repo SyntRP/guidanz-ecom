@@ -50,9 +50,7 @@ export const ShoeFacets = () => {
                   <p className="hits_price">
                     {sc?.price?.currency + " " + sc?.price?.value.toFixed(2)}
                   </p>
-                  {/* {filteredColor && (
-        <div className="hit_color" style={{ backgroundColor: filteredColor }} />
-      )} */}
+        <div className="hit_color" style={{ backgroundColor: sc?.color?.original_name }} />
                 </div>
               </a>
             </SwiperSlide>
