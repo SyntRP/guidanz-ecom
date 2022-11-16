@@ -28,17 +28,23 @@ export const ShoeFacets = () => {
       <div className="">
         <Swiper
           slidesPerView={4}
-          spaceBetween={1}
+          spaceBetween={-1}
           // navigation={true}
           modules={[Navigation]}
-          className="mySwiper g-swiper"
+          className="mySwiper g-swiper "
+          breakpoints={{
+            320: { slidesPerView: 2, spaceBetween: 5 },
+            480: { slidesPerView: 2, spaceBetween: 5 },
+            768: { slidesPerView: 3, spaceBetween:  -1},
+            1024: { slidesPerView: 4, spaceBetween: -1 },
+          }}
         >
           {shoeCollections?.map((sc, i) => (
             <SwiperSlide key={i}>
               <a href={`/p/${sc?.objectID}`}>
                 <div>
-                  <div className="md:aspect-[7/10]">
-                    <img src={sc?.image_urls[0]} style={{ width: "100%" }} />
+                  <div >
+                    <img src={sc?.image_urls[0]} className="aspect-[14/13]" style={{ width: "100%" }} />
                   </div>
                   <div className="hits_name">{sc?.name}</div>
                   <p className="hits_price">

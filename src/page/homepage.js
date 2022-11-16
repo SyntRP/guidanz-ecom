@@ -49,27 +49,27 @@ const Homepage = () => {
   }, []);
 
   return (
-    <div>
-      <BuilderComponent model="page" content={content} />
-      <div className="secondary_container  ">
-        <BuilderComponent model="banner-1" content={builderContentJson2} />
-      </div>
-      <BuilderComponent model="banner-2" content={builderContentJson} />
+    <>
       <div>
-        <WomenFacets />
-      </div>
-      <div className="bg-[#0A1D48] mt-5 ">
-        {" "}
-        <div className="secondary_container h-80">
-          <BuilderComponent model="banner-3" content={builderContentJson1} />
+        <BuilderComponent model="page" content={content} />
+        <div className="secondary_container  ">
+          <BuilderComponent model="banner-1" content={builderContentJson2} />
+        </div>
+        <BuilderComponent model="banner-2" content={builderContentJson} />
+        <div>
+          <WomenFacets />
+        </div>
+        <div className="bg-[#0A1D48] mt-5 ">
+          {" "}
+          <div className="secondary_container h-80">
+            <BuilderComponent model="banner-3" content={builderContentJson1} />
+          </div>
         </div>
       </div>
-
-      <div className="secondary_container mb-5  ">
-        <ShoeFacets/>
-
+      <div className="secondary_container mb-5  mt-5">
+        <ShoeFacets />
       </div>
-    </div>
+    </>
   );
 };
 

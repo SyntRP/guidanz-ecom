@@ -413,7 +413,16 @@ price SLider css
 }
 .swiper-slide {
   width: 230px;
-    margin-right: 24px;
-    border: 2px solid #0000001A;
-    box-shadow: 0px 0px 6px #0000001A;
+  margin-right: 24px;
+  border: 2px solid #0000001a;
+  /* box-shadow: 0px 0px 6px #0000001A; */
+}
+.collection-wrapper {
+  background: -webkit-linear-gradient(359deg, #ffa700 0%, #fe1465 100%) 0% 0%
+    no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: xx-large;
+  font-weight: bolder;
 }

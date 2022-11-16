@@ -30,25 +30,31 @@ export const WomenFacets = () => {
   } ,[]);
   return (
     <div className="secondary_container">
-      <p className="font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-orange-400 to-pink-900">
+      <p className="collection-wrapper">
         Shop The Collections
         {/* {console.log(womensCollections, "womensCollections")} */}
       </p>
       <div className="mt-5">
       <Swiper
         slidesPerView={4}
-        spaceBetween={24}
+        spaceBetween={40}
         border={1}
         // navigation={true}
         modules={[Navigation]}
         className="mySwiper"
+        breakpoints={{
+          320: { slidesPerView: 2, spaceBetween: 20 },
+          480: { slidesPerView: 2, spaceBetween: 30 },
+          768: { slidesPerView: 3, spaceBetween: 30 },
+          1024: { slidesPerView: 4, spaceBetween: 40 },
+        }}
       >
         {womensCollections?.map((wm,i) => (
         <SwiperSlide key={i} >
           <a href={`/p/${wm?.objectID}`}>
             <div>
-      <div className="md:aspect-[7/10]">
-        <img src={wm?.image_urls[0]} style={{ width: "100%" }} />
+      <div>
+        <img src={wm?.image_urls[0]} className="md:aspect-[8/10]" style={{ width: "100%" }} />
       </div>
       <div className="hits_name">
           {wm?.name}
