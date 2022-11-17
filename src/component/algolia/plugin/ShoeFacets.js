@@ -14,7 +14,7 @@ export const ShoeFacets = () => {
     if (loading) {
       index
         .search("", {
-         facetFilters: ["hierarchical_categories.lvl1: Men > Shoes"],
+          facetFilters: ["hierarchical_categories.lvl1: Men > Shoes"],
           hitsPerPage: 4,
         })
         .then((results) => {
@@ -35,7 +35,7 @@ export const ShoeFacets = () => {
           breakpoints={{
             320: { slidesPerView: 2, spaceBetween: 5 },
             480: { slidesPerView: 2, spaceBetween: 5 },
-            768: { slidesPerView: 3, spaceBetween:  -1},
+            768: { slidesPerView: 3, spaceBetween: -1 },
             1024: { slidesPerView: 4, spaceBetween: -1 },
           }}
         >
@@ -43,14 +43,21 @@ export const ShoeFacets = () => {
             <SwiperSlide key={i}>
               <a href={`/p/${sc?.objectID}`}>
                 <div>
-                  <div >
-                    <img src={sc?.image_urls[0]} className="aspect-[14/13]" style={{ width: "100%" }} />
+                  <div>
+                    <img
+                      src={sc?.image_urls[0]}
+                      className="aspect-[14/13] hover:scale-110 transition delay-300 duration-500 ease-in-out"
+                      style={{ width: "100%" }}
+                    />
                   </div>
                   <div className="hits_name">{sc?.name}</div>
                   <p className="hits_price">
                     {sc?.price?.currency + " " + sc?.price?.value.toFixed(2)}
                   </p>
-        <div className="hit_color" style={{ backgroundColor: sc?.color?.original_name }} />
+                  <div
+                    className="hit_color"
+                    style={{ backgroundColor: sc?.color?.original_name }}
+                  />
                 </div>
               </a>
             </SwiperSlide>

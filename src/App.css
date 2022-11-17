@@ -211,6 +211,9 @@ Algolia instantsearch styles
   color: var(--secondary-500);
   background-color: rgba(var(--primary--rgb--key), 0.1);
 }
+/* .ais-SearchBox-submitIcon{
+ xmlns= http://www.w3.org/2000/svg
+} */
 .builder-tabs-wrap{
   display: flex;
     flex-direction: row;
@@ -218,18 +221,23 @@ Algolia instantsearch styles
     overflow: auto;
     border-bottom: inset;
 }
-.builder-tab-wrap .builder-tab-active{
-  transform: translateX(0) scaleX(0.333);
+.slick-dots li button:before {
+  font-size: 16px;
+  line-height: 20px;
   position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		height: 2px;
-		background-color: blue;
-		transform-origin: 0 0;
-		transition: transform .25s;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: white;
 }
-
+.active button:before {
+  opacity: .75;
+  color: white;
+}
 /* .g-swiper{
  max-height: 460px;
 } */
